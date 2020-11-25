@@ -23,6 +23,10 @@ namespace project_api.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// This method is called to get a weather forecast.
+        /// </summary>
+        /// <returns>Returns a random weather forecast guess</returns>
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
